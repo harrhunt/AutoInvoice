@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+    <div>
+        {% for workspace in workspaces %}
+            <div>{{ workspace.id }} - {{ workspace.name }}</div>
+        {% endfor %}
+        <hr>
+        {% for project in projects %}
+            <div>{{ project.id }} - {{ project.name }}</div>
+        {% endfor %}
+        <hr>
+        {% for user in users %}
+            <div>{{ user.id }} - {{ user.name }}</div>
+        {% endfor %}
+    </div>
+{% endblock %}
